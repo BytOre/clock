@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Online Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+<p><image src="clock.png" height="200" width="200"></image></p>
+<br/>
+<br/>
+<h1 id="time"></h1>
+<script type="text/javascript">
+    function updateTime()
+    {
+        document.getElementById("time").innerHTML=Date();
+        setTimeout(updateTime, 1000);
+    }
+    updateTime();
+</script>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<footer>
+    powered by <b>BytOre</b> June 2025
+</footer>
+</body>
+</html>
